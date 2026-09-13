@@ -9,6 +9,8 @@
 //   POST /api/push/subscribe     注册推送订阅
 //   DELETE /api/push/unsubscribe 退订
 
+const ENABLE_PUSH = true
+
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { requireSecret } from './util/auth.js';
